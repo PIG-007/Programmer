@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>cryptDlg</class>
+ <widget class="QWidget" name="cryptDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>527</width>
+    <height>645</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTextEdit" name="getCipherTextEdit">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>190</y>
+     <width>351</width>
+     <height>131</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="putPlaintextEdit">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>460</y>
+     <width>351</width>
+     <height>131</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>230</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Get Ciphertext:</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>490</y>
+     <width>71</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Decrypt Content:</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>330</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Alogrithm:</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="decryptBtn">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>600</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Decrypt</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="alogrithmBox">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>340</y>
+     <width>351</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Caesar cipher</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Keyword cipher</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Multiliteral cipher</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Affine cipher</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Vigenere cipher</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Autokey plaintext</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Autokey ciphertext</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Playfair cipher</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Permutation cipher</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Column permutation cipher</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Double-Transposition cipher</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>RC4</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>CA</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>DES</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>AES</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>RSA</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ECC</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>400</y>
+     <width>41</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Key:</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="keyTextEdit">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>380</y>
+     <width>351</width>
+     <height>61</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>90</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Hint:</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="textRecv">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>60</y>
+     <width>351</width>
+     <height>111</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="editAddress">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>20</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="editPort">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>20</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>20</y>
+     <width>40</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Port:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnListen">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>20</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Listen</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Address:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="statusLabel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>610</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Status:</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
